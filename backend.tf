@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "faias-terraform-state"
-    key            = "terraform/state/ansible-setup.tfstate"
-    region         = "eu-north-1"
-    encrypt        = true
+    bucket         = "your-s3-bucket-name"
+    key            = "path/to/terraform.tfstate"
+    region         = "us-east-1"
     dynamodb_table = "faias-dynamodb"
   }
 }
+
